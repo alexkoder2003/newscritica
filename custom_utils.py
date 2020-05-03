@@ -21,8 +21,8 @@ def parsing(url):
 
 
     title = soup.find('div', {
-        'class': 'info-body'
-    }).find('h1').text
+        'class': 'bname'
+    }).find('.h1').text
 
 
 
