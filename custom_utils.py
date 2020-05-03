@@ -19,15 +19,15 @@ def parsing(url):
     soup = BeautifulSoup(page.text, 'html.parser')
 
     img = soup.find(
-        'div', {
-            'class': 'img'
+        'img', {
+            'class': 'xfieldimage'
         }
     ).find(
         'img'
     ).get('src')
 
     title = soup.find('div', {
-        'class': 'film'
+        'class': 'info-body'
     }).find('h1').text
 
     hd =soup.find('span', {
@@ -61,7 +61,7 @@ def parsing(url):
 
     description = soup.find(
         'div', {
-            'class': 'description'
+            'class': 'short-story'
         }
     ).find_all(
         'span'
