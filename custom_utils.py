@@ -21,10 +21,10 @@ def parsing(url):
 
 
     title = soup.find('div', {
-        'class': 'bname'
-    }).find('.h1').text
+        'class': 'film'
+    }).find('h1').text
 
-
+    
 
     data = [title]
     if data[3]:
