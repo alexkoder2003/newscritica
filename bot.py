@@ -5,7 +5,7 @@ from decouple import config
 
 
 app2 = Client(
-    'criticalsite_bot',
+    'criticalsite',
     api_id= '1252175' ,
     api_hash= '46648b03fb24eaa7ce7f1ab1fdc6d7f5' ,
     bot_token= '999129543:AAE-Vq0DihmvIFanHi7-757tH5Rg-acIwS0' ,
